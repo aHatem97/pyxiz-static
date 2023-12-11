@@ -410,20 +410,9 @@ h5 {
 h6 {
   font-size: 15px;
 }
-.font-rubik {
-  font-family: "Rubik", sans-serif !important;
-}
-.font-gilroy-bold {
-  font-family: "gilroy-bold" !important;
-}
-.font-slab {
-  font-family: "Roboto Slab", serif !important;
-}
+
 .font-gordita {
   font-family: "gordita" !important;
-}
-.font-recoleta {
-  font-family: "Recoleta" !important;
 }
 ::-webkit-input-placeholder {
   /* Edge */
