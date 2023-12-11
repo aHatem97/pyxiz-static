@@ -11251,7 +11251,7 @@ body .shop-btn-two:hover {
   box-shadow: 0 15px 30px rgba(9, 16, 29, 0.03);
 }
 .fancy-feature-eighteen .tab-content {
-  max-width: 1450px;
+  max-width: 1050px;
   margin: 0 auto;
   background: #fff;
   border-radius: 20px;
@@ -11259,7 +11259,7 @@ body .shop-btn-two:hover {
   overflow: hidden;
 }
 .fancy-feature-eighteen .tab-content .text-wrapper {
-  padding: 40px 80px;
+  padding: 1em;
 }
 .fancy-feature-eighteen .tab-content .text-wrapper h4 {
   font-size: 36px;
