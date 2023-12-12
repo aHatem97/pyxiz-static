@@ -16895,3 +16895,28 @@ body .shop-btn-two:hover {
   justify-content: center;
   align-items: center;
 }
+
+.industry-rc {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2em;
+}
+
+.industry {
+  flex: 1;
+}
+
+.industry-container {
+  display: flex;
+  justify-content: stretch;
+  margin: 0;
+  height: 100%;
+}
+
+.industry-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

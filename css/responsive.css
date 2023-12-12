@@ -3950,3 +3950,9 @@
     font-size: 22px;
   }
 }
+
+@media (max-width: 992px) {
+  .industry-rc {
+    flex-direction: column;
+  }
+}
