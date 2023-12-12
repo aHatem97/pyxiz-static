@@ -932,7 +932,6 @@ body .theme-btn-four:hover {
   color: #fff;
 }
 body .theme-btn-five {
-  font-family: "Rubik", sans-serif;
   line-height: 56px;
   padding: 0 35px;
   text-align: center;
@@ -942,6 +941,7 @@ body .theme-btn-five {
   z-index: 1;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(234, 80, 105, 0.7);
+  font-weight: 500;
 }
 body .theme-btn-five:before {
   content: "";
