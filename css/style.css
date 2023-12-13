@@ -1708,14 +1708,14 @@ body .shop-btn-two:hover {
   line-height: 1.25em;
   padding-bottom: 26px;
 }
-.block-style-two .text-wrapper a {
+/* .block-style-two .text-wrapper a {
   font-size: 16px;
   color: var(--blue-dark);
   margin-top: 18px;
 }
 .block-style-two .text-wrapper a:hover {
   text-decoration: underline;
-}
+} */
 .block-style-two .text-wrapper .quote {
   border-top: 1px solid #ececec;
   margin-top: 22px;
@@ -12882,7 +12882,7 @@ body .shop-btn-two:hover {
 .hero-banner-eleven .hero-text-wrapper h1 {
   font-family: "gordita";
   font-weight: 700;
-  font-size: 82px;
+  font-size: 40px;
   line-height: 1.3em;
 }
 .hero-banner-eleven .hero-text-wrapper h1 span {
