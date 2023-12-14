@@ -1060,11 +1060,30 @@ body .theme-btn-twelve {
   color: #fff;
   padding: 0 32px;
   transition: all 0.3s ease-in-out;
+  width: fit-content;
 }
 body .theme-btn-twelve:hover {
   background: transparent;
   color: #ff006b;
 }
+
+body .black-round-btn {
+  font-family: "gordita";
+  font-size: 17px;
+  line-height: 48px;
+  background: #000;
+  border: 2px solid #000;
+  border-radius: 30px;
+  color: #fff;
+  padding: 0 32px;
+  transition: all 0.3s ease-in-out;
+  width: fit-content;
+}
+body .black-round-btn:hover {
+  background: transparent;
+  color: #000;
+}
+
 body .theme-btn-thirteen {
   font-family: "gordita";
   font-size: 17px;
