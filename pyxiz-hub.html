@@ -259,8 +259,9 @@
           <div class="row">
             <div class="col-xl-11 col-lg-12 col-md-10 m-auto text-center">
               <h1 class="hero-heading font-gordita">
-                Explore your <span style="color: #ff006b">communities</span> to
-                <span style="color: #fedc00">grow faster</span> on Pyxizhub
+                Explore your <span style="color: #ff006b">communities</span>
+                <br />to <span style="color: #fedc00">grow faster</span> on
+                <br />Pyxizhub
               </h1>
               <p class="hero-sub-heading">
                 Empowering Growth Through Community and Brand Synergy
@@ -270,7 +271,7 @@
                 href="sign-up.html"
                 class="theme-btn-twelve d-none d-lg-block"
                 style="width: fit-content; margin: 0 auto"
-                >Explore Now</a
+                >Create Event Now</a
               >
             </div>
           </div>
@@ -1014,7 +1015,7 @@
 				Client Feedback Slider Two
 			=====================================================
 			-->
-      <div class="client-feedback-slider-two mt-180 md-mt-100">
+      <div class="client-feedback-slider-two">
         <img src="images/shape/78.svg" alt="" class="shapes shape-one" />
         <img src="images/shape/79.svg" alt="" class="shapes shape-two" />
         <img src="images/shape/80.svg" alt="" class="shapes shape-three" />
@@ -1034,14 +1035,14 @@
         </div>
 
         <div class="slider-content">
-          <div class="clientSliderTwo">
+          <div id="top-trust-slider" class="owl-carousel owl-theme">
             <div class="item">
               <div class="bg-wrapper">
                 <img
                   src="images/logo/trust1.png"
                   alt=""
                   class="logo"
-                  style="height: 200px; margin: 0 auto"
+                  style="height: 200px; margin: 0 auto; max-width: 300px"
                 />
               </div>
             </div>
@@ -1051,7 +1052,7 @@
                   src="images/logo/trust2.png"
                   alt=""
                   class="logo"
-                  style="height: 200px; margin: 0 auto"
+                  style="height: 200px; margin: 0 auto; max-width: 300px"
                 />
               </div>
             </div>
@@ -1061,7 +1062,7 @@
                   src="images/logo/trust3.png"
                   alt=""
                   class="logo"
-                  style="height: 200px; margin: 0 auto"
+                  style="height: 200px; margin: 0 auto; max-width: 300px"
                 />
               </div>
             </div>
@@ -1199,7 +1200,6 @@
                     <li><a href="./pyxiz-event.html">Events</a></li>
                     <li><a href="./pyxiz-store.html">Store</a></li>
                     <li><a href="./pyxiz-restaurant.html">Restaurant</a></li>
-                    <li><a href="./pyxiz-hub.html">Hub</a></li>
                   </ul>
                 </div>
               </div>
@@ -1302,23 +1302,39 @@
             nav: false,
             loop: true,
             onTranslated: function (event) {
-              // Update the button text based on the current slide index
+              // Update the button text based on the current slide image
               var currentSlide = event.item.index % event.item.count;
               var exploreButton = document.querySelector("#slider-btn");
-              switch (currentSlide) {
-                case 0:
-                  exploreButton.textContent = "Explore Now";
-                  break;
-                case 1:
-                  exploreButton.textContent = "Discover More";
-                  break;
-                case 2:
-                  exploreButton.textContent = "Learn More";
-                  break;
-                default:
-                  exploreButton.textContent = "Explore Now";
+              var slideImage = owlSlider
+                .find(".item")
+                .eq(currentSlide)
+                .find("img")
+                .attr("src");
+
+              if (slideImage.includes("pyxizHubHeader1.png")) {
+                exploreButton.textContent = "Create Event Now";
+              } else if (slideImage.includes("pyxizHubHeader2.png")) {
+                exploreButton.textContent = "Create Restaurant Now";
+              } else if (slideImage.includes("pyxizHubHeader3.png")) {
+                exploreButton.textContent = "Create Event Now";
+              } else {
+                exploreButton.textContent = "Create Event Now";
               }
             },
+          });
+        });
+      </script>
+
+      <script>
+        $(document).ready(function () {
+          // Initialize Slick slider
+          const clientSlider = $("#top-trust-slider");
+          clientSlider.owlCarousel({
+            items: 3,
+            dots: false,
+            autoplay: true,
+            nav: false,
+            loop: true,
           });
         });
       </script>
