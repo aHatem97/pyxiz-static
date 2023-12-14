@@ -42,6 +42,32 @@
     <!-- responsive style sheet -->
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <style>
+      /* Custom styles for the dots */
+      .owl-dots {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .owl-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #bbb !important;
+        display: inline-block;
+        margin: 0 5px;
+        transition: 0.5s all;
+      }
+
+      .owl-dot.active {
+        background-color: #555 !important;
+      }
+    </style>
     <!-- Fix Internet Explorer ______________________________________-->
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -121,15 +147,6 @@
                           </li>
                           <li>
                             <a
-                              href="pyxiz-event.html"
-                              class="dropdown-item img-box"
-                            >
-                              <img src="./images/menu/home02.png" alt="" />
-                              <span class="font-rubik">Pyxiz Event</span>
-                            </a>
-                          </li>
-                          <li>
-                            <a
                               href="pyxiz-app.html"
                               class="dropdown-item img-box"
                             >
@@ -139,11 +156,20 @@
                           </li>
                           <li>
                             <a
-                              href="pyxiz-smartv.html"
+                              href="pyxiz-hub.html"
                               class="dropdown-item img-box"
                             >
-                              <img src="./images/menu/home04.png" alt="" />
-                              <span class="font-rubik">Pyxiz Smartv</span>
+                              <img src="./images/menu/home07.png" alt="" />
+                              <span class="font-rubik">Pyxiz Hub</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="pyxiz-event.html"
+                              class="dropdown-item img-box"
+                            >
+                              <img src="./images/menu/home02.png" alt="" />
+                              <span class="font-rubik">Pyxiz Event</span>
                             </a>
                           </li>
                           <li>
@@ -166,11 +192,11 @@
                           </li>
                           <li>
                             <a
-                              href="pyxiz-hub.html"
+                              href="pyxiz-smartv.html"
                               class="dropdown-item img-box"
                             >
-                              <img src="./images/menu/home07.png" alt="" />
-                              <span class="font-rubik">Pyxiz Hub</span>
+                              <img src="./images/menu/home04.png" alt="" />
+                              <span class="font-rubik">Pyxiz Smartv</span>
                             </a>
                           </li>
                         </ul>
@@ -178,19 +204,13 @@
                       <!-- /.dropdown-menu -->
                     </li>
                     <li class="nav-item">
-                      <a href="#product" class="nav-link">Product</a>
+                      <a href="#features" class="nav-link">Features</a>
                     </li>
                     <li class="nav-item">
-                      <a href="#feature" class="nav-link">Features</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#story" class="nav-link">Stories</a>
+                      <a href="#services" class="nav-link">Services</a>
                     </li>
                     <li class="nav-item">
                       <a href="#pricing" class="nav-link">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#faq" class="nav-link">FAQ’s</a>
                     </li>
                   </ul>
                 </div>
@@ -199,7 +219,7 @@
           </nav>
           <div class="right-widget">
             <a href="sign-up.html" class="theme-btn-twelve d-none d-lg-block"
-              >Start Free Trial</a
+              >Signup For Free</a
             >
           </div>
         </div>
@@ -229,17 +249,13 @@
                   href="sign-up.html"
                   class="theme-btn-twelve d-none d-lg-block"
                   style="width: fit-content"
-                  >Start Free Trial</a
+                  >Create Restaurant Now</a
                 >
               </div>
               <!-- /.hero-text-wrapper -->
             </div>
             <div class="illustration-container">
-              <img
-                src="images/assets/restaurantIllustration.jpg"
-                alt=""
-                style="max-width: 600px"
-              />
+              <img src="images/assets/restaurantIllustration.png" alt="" />
             </div>
           </div>
         </div>
@@ -336,7 +352,7 @@
 				Fancy Feature Four
 			============================================== 
 			-->
-      <div class="fancy-feature-four" style="margin-top: 10em">
+      <div class="fancy-feature-four" style="margin-top: 10em" id="features">
         <div class="bg-wrapper">
           <img src="images/shape/18.svg" alt="" class="shapes shape-right" />
           <img src="images/shape/19.svg" alt="" class="shapes shape-left" />
@@ -866,7 +882,32 @@
                 <!-- /.text-block -->
               </div>
               <div class="col-xl-7 col-lg-6">
-                <img src="images/assets/chat product - view sales.png" alt="" />
+                <div id="owl-slider" class="owl-carousel owl-theme">
+                  <div class="item">
+                    <img
+                      src="./images/assets/chat product - view sales.png"
+                      alt=""
+                      class="img-meta"
+                      style="border-radius: 20px"
+                    />
+                  </div>
+                  <div class="item">
+                    <img
+                      src="./images/assets/My cart.png"
+                      alt=""
+                      class="img-meta"
+                      style="border-radius: 20px"
+                    />
+                  </div>
+                  <div class="item">
+                    <img
+                      src="./images/assets/about  - rastrant.png"
+                      alt=""
+                      class="img-meta"
+                      style="border-radius: 20px"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -953,7 +994,7 @@
                 >
                   <li class="nav-item">
                     <a
-                      href="#feature"
+                      href="#features"
                       class="nav-link"
                       style="margin: 0; padding: 0"
                       >Features</a
@@ -961,18 +1002,10 @@
                   </li>
                   <li class="nav-item">
                     <a
-                      href="#industry"
+                      href="#services"
                       class="nav-link"
                       style="margin: 0; padding: 0"
-                      >Industry</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      href="#metaverse"
-                      class="nav-link"
-                      style="margin: 0; padding: 0"
-                      >Metaverse</a
+                      >Services</a
                     >
                   </li>
                   <li class="nav-item">
@@ -1106,6 +1139,21 @@
 
       <!-- Theme js -->
       <script src="js/theme.js"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          // Initialize Owl Carousel
+          const owlSlider = $("#owl-slider");
+          owlSlider.owlCarousel({
+            items: 1,
+            dots: true,
+            autoplay: true,
+            nav: false,
+            loop: true,
+          });
+        });
+      </script>
     </div>
     <!-- /.main-page-wrapper -->
   </body>

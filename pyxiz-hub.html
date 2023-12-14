@@ -37,11 +37,38 @@
       sizes="56x56"
       href="./images/logo/pyxizHubLogo.png"
     />
+
     <!-- Main style sheet -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <!-- responsive style sheet -->
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <style>
+      /* Custom styles for the dots */
+      .owl-dots {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .owl-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #bbb !important;
+        display: inline-block;
+        margin: 0 5px;
+        transition: 0.5s all;
+      }
+
+      .owl-dot.active {
+        background-color: #555 !important;
+      }
+    </style>
     <!-- Fix Internet Explorer ______________________________________-->
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -82,7 +109,7 @@
           <div class="logo order-lg-1">
             <a href="index.html"
               ><img
-                src="images/logo/pyxizHubLogo.png"
+                src="images/logo/pyxizHubLogoWhite.png"
                 alt=""
                 style="max-height: 50px"
             /></a>
@@ -103,7 +130,7 @@
                 <a
                   href="sign-up.html"
                   class="theme-btn-twelve d-none d-lg-block"
-                  >Start Free Trial</a
+                  >Signup For Free</a
                 >
               </li>
             </ul>
@@ -145,15 +172,6 @@
                           </li>
                           <li>
                             <a
-                              href="pyxiz-event.html"
-                              class="dropdown-item img-box"
-                            >
-                              <img src="./images/menu/home02.png" alt="" />
-                              <span class="font-rubik">Pyxiz Event</span>
-                            </a>
-                          </li>
-                          <li>
-                            <a
                               href="pyxiz-app.html"
                               class="dropdown-item img-box"
                             >
@@ -163,11 +181,20 @@
                           </li>
                           <li>
                             <a
-                              href="pyxiz-smartv.html"
+                              href="pyxiz-hub.html"
                               class="dropdown-item img-box"
                             >
-                              <img src="./images/menu/home04.png" alt="" />
-                              <span class="font-rubik">Pyxiz Smartv</span>
+                              <img src="./images/menu/home07.png" alt="" />
+                              <span class="font-rubik">Pyxiz Hub</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="pyxiz-event.html"
+                              class="dropdown-item img-box"
+                            >
+                              <img src="./images/menu/home02.png" alt="" />
+                              <span class="font-rubik">Pyxiz Event</span>
                             </a>
                           </li>
                           <li>
@@ -190,11 +217,11 @@
                           </li>
                           <li>
                             <a
-                              href="pyxiz-hub.html"
+                              href="pyxiz-smartv.html"
                               class="dropdown-item img-box"
                             >
-                              <img src="./images/menu/home07.png" alt="" />
-                              <span class="font-rubik">Pyxiz Hub</span>
+                              <img src="./images/menu/home04.png" alt="" />
+                              <span class="font-rubik">Pyxiz Smartv</span>
                             </a>
                           </li>
                         </ul>
@@ -202,13 +229,16 @@
                       <!-- /.dropdown-menu -->
                     </li>
                     <li class="nav-item">
-                      <a href="#feature" class="nav-link">Feature</a>
+                      <a href="#features" class="nav-link">Features</a>
                     </li>
                     <li class="nav-item">
-                      <a href="#p-tour" class="nav-link">Product Tour</a>
+                      <a href="#industry" class="nav-link">Industry</a>
                     </li>
                     <li class="nav-item">
-                      <a href="#feedback" class="nav-link">Feedback</a>
+                      <a href="#metaverse" class="nav-link">Metaverse</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#pricing" class="nav-link">Pricing</a>
                     </li>
                   </ul>
                 </div>
@@ -236,6 +266,7 @@
                 Empowering Growth Through Community and Brand Synergy
               </p>
               <a
+                id="slider-btn"
                 href="sign-up.html"
                 class="theme-btn-twelve d-none d-lg-block"
                 style="width: fit-content; margin: 0 auto"
@@ -245,22 +276,28 @@
           </div>
 
           <div class="screen-holder">
-            <div id="slick-slider">
-              <img
-                src="./images/assets/pyxizHubHeader1.png"
-                alt=""
-                class="img-meta"
-              />
-              <img
-                src="./images/assets/pyxizHubHeader2.png"
-                alt=""
-                class="img-meta"
-              />
-              <img
-                src="./images/assets/pyxizHubHeader3.png"
-                alt=""
-                class="img-meta"
-              />
+            <div id="owl-slider" class="owl-carousel owl-theme">
+              <div class="item">
+                <img
+                  src="./images/assets/pyxizHubHeader1.png"
+                  alt=""
+                  class="img-meta"
+                />
+              </div>
+              <div class="item">
+                <img
+                  src="./images/assets/pyxizHubHeader2.png"
+                  alt=""
+                  class="img-meta"
+                />
+              </div>
+              <div class="item">
+                <img
+                  src="./images/assets/pyxizHubHeader3.png"
+                  alt=""
+                  class="img-meta"
+                />
+              </div>
             </div>
             <img src="./images/shape/230.svg" alt="" class="shapes shape-one" />
             <img src="./images/shape/231.svg" alt="" class="shapes shape-two" />
@@ -368,7 +405,7 @@
 			-->
       <div
         class="fancy-feature-seventeen lg-container mt-150 md-mt-90"
-        id="feature"
+        id="features"
       >
         <div class="container">
           <div class="row">
@@ -1115,7 +1152,7 @@
                 >
                   <li class="nav-item">
                     <a
-                      href="#feature"
+                      href="#features"
                       class="nav-link"
                       style="margin: 0; padding: 0"
                       >Features</a
@@ -1243,6 +1280,7 @@
           }, 250); // Delay the change for half a second (adjust as needed)
         }
       </script>
+
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
       <!-- jQuery -->
       <script src="vendor/jquery.min.js"></script>
@@ -1262,6 +1300,39 @@
 
       <!-- Theme js -->
       <script src="js/theme.js"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          // Initialize Owl Carousel
+          const owlSlider = $("#owl-slider");
+          owlSlider.owlCarousel({
+            items: 1,
+            dots: true,
+            autoplay: true,
+            nav: false,
+            loop: true,
+            onTranslated: function (event) {
+              // Update the button text based on the current slide index
+              var currentSlide = event.item.index % event.item.count;
+              var exploreButton = document.querySelector("#slider-btn");
+              switch (currentSlide) {
+                case 0:
+                  exploreButton.textContent = "Explore Now";
+                  break;
+                case 1:
+                  exploreButton.textContent = "Discover More";
+                  break;
+                case 2:
+                  exploreButton.textContent = "Learn More";
+                  break;
+                default:
+                  exploreButton.textContent = "Explore Now";
+              }
+            },
+          });
+        });
+      </script>
     </div>
     <!-- /.main-page-wrapper -->
   </body>
